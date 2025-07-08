@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>영단어 퀴즈</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>영단어 퀴즈</h1>
+    <div id="menu">
+      <label>난이도:
+        <select id="level">
+          <option value="easy">쉬움</option>
+          <option value="medium">중간</option>
+          <option value="hard">어려움</option>
+        </select>
+      </label>
+      <button onclick="startQuiz()">퀴즈 시작</button>
+    </div>
+    <div id="quiz" class="hidden">
+      <div id="question"></div>
+      <div id="choices"></div>
+    </div>
+    <div id="result" class="hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
